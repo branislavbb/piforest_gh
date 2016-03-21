@@ -1,0 +1,16 @@
+{{berry.name}}
+{{berries}}
+{{berry}}
+this page
+
+
+<div class="row-fluid">
+  <!-- Flavors -->
+  <div class="col-md-2">1</div>
+  <!-- Berry -->
+  <div class="col-md-8">2</div>
+  <!-- Seeds -->
+  <div class="col-md-2">
+    <span ng-repeat="seedType in seedTypes">{{seedType.name}}</br></br>
+      <span ng-repeat="seed in seeds | filter: {typeId: seedType.id}"> {{seed.name}}</br> </span></span></div>
+</div>

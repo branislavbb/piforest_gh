@@ -1,0 +1,14 @@
+<div class="container">
+  <div class="row">
+    <a ng-repeat="berry in berries" ui-sref="berry({id: berry.id})">{{berry.name}}</br></a>
+
+    <form class="form-group" name="berryForm" novalidate ng-submit="addBerry()">
+      <input type="text" class="form-control" placeholder="Name"  ng-model="newBerry.name"></br>
+      <input type="text" class="form-control" placeholder="Cost" ng-model="newBerry.cost"></br>
+
+      <button class="btn btn-default" ng-disabled="berryForm.$invalid">Add</button>
+    </form>
+{{newBerry}}
+</div>
+
+</div>

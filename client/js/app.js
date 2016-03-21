@@ -20,11 +20,12 @@ angular //refactor into seperate app/route modules
       .state('berries',{
         url:'/berries',
         templateUrl: 'views/berries.html',
-        
+        controller: 'BerryController'
       })
       .state('berry',{
         url:'/berries/{id}',
-        templateUrl:'views/berry.html'
+        templateUrl:'views/berry.html',
+        controller: 'BerryBuilderController'
       });
 
     $urlRouterProvider.otherwise('todo');
