@@ -1,0 +1,22 @@
+{
+  "db": {
+    "name": "db",
+    "connector": "memory"
+  },
+  "piforestdb": {
+    "host": "localhost",
+    "port": 3306,
+    "database": "piforestdb",
+    "name": "piforestdb",
+    "user": "root",
+    "connector": "mysql"
+  },
+  "piforestmongodb": {
+    "host": "localhost",
+    "port": 27017,
+    "password": "",
+    "name": "piforestmongodb",
+    "connector": "mongodb",
+    "user": ""
+  }
+}

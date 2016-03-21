@@ -1,0 +1,27 @@
+{
+  "name": "SeedType",
+  "base": "PersistedModel",
+  "strict": false,
+  "idInjection": false,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "name": {
+      "type": "string"
+    },
+    "required": {
+      "type": "boolean"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "seeds": {
+      "type": "hasMany",
+      "model": "Seed",
+      "foreignKey": "typeId"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

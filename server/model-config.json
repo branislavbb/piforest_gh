@@ -1,0 +1,53 @@
+{
+  "_meta": {
+    "sources": [
+      "loopback/common/models",
+      "loopback/server/models",
+      "../common/models",
+      "./models"
+    ]
+  },
+  "User": {
+    "dataSource": "db"
+  },
+  "AccessToken": {
+    "dataSource": "db",
+    "public": false
+  },
+  "ACL": {
+    "dataSource": "db",
+    "public": false
+  },
+  "RoleMapping": {
+    "dataSource": "db",
+    "public": false
+  },
+  "Role": {
+    "dataSource": "db",
+    "public": false
+  },
+  "Todo": {
+    "dataSource": "piforestdb",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
+  },
+  "Seed": {
+    "dataSource": "piforestdb",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
+  },
+  "SeedType": {
+    "dataSource": "piforestdb",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
+  },
+  "Berry": {
+    "dataSource": "piforestmongodb",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
+  }
+}
